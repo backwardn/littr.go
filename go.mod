@@ -4,11 +4,11 @@ go 1.13
 
 require (
 	github.com/captncraig/cors v0.0.0-20190703115713-e80254a89df1 // indirect
-	github.com/go-ap/activitypub v0.0.0-20191222130856-db8e40c89444
-	github.com/go-ap/client v0.0.0-20191222183513-a49cd9f438bb
-	github.com/go-ap/errors v0.0.0-20191222183928-b7ce8b9c41e0
-	github.com/go-ap/handlers v0.0.0-20191222184133-108335c3587d
-	github.com/go-ap/jsonld v0.0.0-20191222183131-1f7910127b87
+	github.com/go-ap/activitypub v0.0.0-20200114195742-78d2a53e63a5
+	github.com/go-ap/client v0.0.0-20200114201638-255b427d8b1a
+	github.com/go-ap/errors v0.0.0-20200114202328-a459186c3d11
+	github.com/go-ap/handlers v0.0.0-20200114202932-d7c775f6bb3c
+	github.com/go-ap/jsonld v0.0.0-20200114201544-564f952ab53f
 	github.com/go-chi/chi v4.0.2+incompatible
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/gorilla/csrf v1.6.2
@@ -24,6 +24,7 @@ require (
 	github.com/writeas/go-nodeinfo v1.0.0
 	github.com/writeas/go-webfinger v0.0.0-20190106002315-85cf805c86d2 // indirect
 	gitlab.com/golang-commonmark/markdown v0.0.0-20191127184510-91b5b3c99c19
+	golang.org/x/crypto v0.0.0-20200117160349-530e935923ad // indirect
 	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
 	golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6
 	golang.org/x/text v0.3.2
