@@ -1495,7 +1495,7 @@ func (r *repository) SaveItem(it Item) (Item, error) {
 }
 
 func (r *repository) LoadAccounts(f Filters) (AccountCollection, uint, error) {
-	it, err := r.fedbox.Actors(Values(f))
+	it, err := r.fedbox.Actors(Values(&(f.LoadAccountsFilter)))
 	if err != nil {
 		r.errFn(err.Error(), nil)
 		return nil, 0, err
@@ -1543,7 +1543,10 @@ func (r *repository) LoadAccount(f Filters) (Account, error) {
 
 func Values(f interface{}) func() url.Values {
 	return func() url.Values {
-		v, _ := qstring.Marshal(f)
+		v, e := qstring.Marshal(f)
+		if e != nil {
+			return url.Values{}
+		}
 		return v
 	}
 }
