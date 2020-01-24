@@ -1737,7 +1737,6 @@ func (r *repository) Load(next http.Handler) http.Handler {
 		m.User = account(req)
 
 		f := FiltersFromContext(req.Context())
-		//f.MaxItems = 3 * MaxContentItems
 		cursor, err = r.ServiceInbox(f)
 		m.Items = cursor.items
 		if err != nil {
